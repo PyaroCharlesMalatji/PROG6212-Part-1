@@ -55,3 +55,19 @@
 --    CONSTRAINT FK_Results_Enrolments FOREIGN KEY (EnrolmentID) REFERENCES Enrolments(EnrolmentID)
 --);
 
+--INSERT INTO Roles (RoleName) VALUES ('Organiser'), ('Participant');
+
+ 
+--INSERT INTO Users (FullName, Email, PasswordHash, RoleID) VALUES
+--('Thabo Mokoena', 'thabo.organiser@raceday.co.za', 'HASHED_PW_1', 1),   -- Organiser
+--('Sarah van Wyk', 'sarah.organiser@raceday.co.za', 'HASHED_PW_2', 1),   -- Organiser
+--('Lindiwe Dube',  'lindiwe.p@raceday.co.za',       'HASHED_PW_3', 2),   -- Participant
+--('James Botha',   'james.p@raceday.co.za',         'HASHED_PW_4', 2);  -- Participant
+
+ 
+--INSERT INTO Events (Name, Description, EventDate, Location, OrganiserID) VALUES
+--('Joburg City Fun Run', 'A community fun run through the Johannesburg CBD.', '2026-10-10', 'Johannesburg', 1),
+--('Cape Town Cycle Tour', 'Iconic road cycling event around the Cape Peninsula.', '2026-11-08', 'Cape Town', 2),
+--('Soweto Marathon', 'Annual road marathon through the streets of Soweto.', '2026-11-22', 'Soweto', 1);
+
+ 
