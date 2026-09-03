@@ -35,3 +35,23 @@
 --    CONSTRAINT FK_Categories_Events FOREIGN KEY (EventID) REFERENCES Events(EventID)
 --);
 
+--CREATE TABLE Enrolments (
+--    EnrolmentID     INT IDENTITY(1,1) PRIMARY KEY,
+--    EnrolmentDate   DATETIME NOT NULL DEFAULT GETDATE(),
+--    Status          NVARCHAR(20) NOT NULL DEFAULT 'Confirmed',
+--    ParticipantID   INT NOT NULL,
+--    CategoryID      INT NOT NULL,
+--    CONSTRAINT FK_Enrolments_Users FOREIGN KEY (ParticipantID) REFERENCES Users(UserID),
+--    CONSTRAINT FK_Enrolments_Categories FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID),
+--    CONSTRAINT UQ_Enrolment UNIQUE (ParticipantID, CategoryID)
+--);
+
+--CREATE TABLE Results (
+--    ResultID        INT IDENTITY(1,1) PRIMARY KEY,
+--    FinishTime      TIME NULL,
+--    Position        INT NULL,
+--    Notes           NVARCHAR(255) NULL,
+--    EnrolmentID     INT NOT NULL UNIQUE,
+--    CONSTRAINT FK_Results_Enrolments FOREIGN KEY (EnrolmentID) REFERENCES Enrolments(EnrolmentID)
+--);
+
