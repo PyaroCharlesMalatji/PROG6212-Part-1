@@ -71,3 +71,21 @@
 --('Soweto Marathon', 'Annual road marathon through the streets of Soweto.', '2026-11-22', 'Soweto', 1);
 
  
+--INSERT INTO Categories (Name, DistanceKm, Fee, EventID) VALUES
+--('5km Fun Run', 5.00, 100.00, 1),
+--('10km Race',   10.00, 150.00, 1),
+--('Individual Cycle', 109.00, 450.00, 2),
+--('10km Marathon Leg', 10.00, 120.00, 3),
+--('42.2km Full Marathon', 42.20, 250.00, 3);
+
+ 
+--INSERT INTO Enrolments (ParticipantID, CategoryID, Status) VALUES
+--(3, 1, 'Confirmed'),   -- Lindiwe -> 5km Fun Run
+--(3, 3, 'Confirmed'),   -- Lindiwe -> Cape Town Cycle
+--(4, 2, 'Confirmed'),   -- James -> 10km Race
+--(4, 5, 'Confirmed');   -- James -> Full Marathon
+
+ 
+--INSERT INTO Results (FinishTime, Position, Notes, EnrolmentID) VALUES
+--('00:28:14', 12, 'Personal best', 1),
+--('04:45:02', 340, NULL, 2);
